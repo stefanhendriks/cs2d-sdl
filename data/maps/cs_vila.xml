@@ -1,0 +1,20 @@
+<!--
+	Map file
+-->
+<map>
+	<general>
+		<!-- types:
+			CS - Hostages must be rescued
+			DE - Bomb the bombspot (or defuse)
+			AS - Assasination
+			ES - Escape
+		-->
+		<type>CS</type>
+		<name>Vila carnage</name>
+		<author>S. Hendriks</author>
+		<tilemap>vila</tilemap>
+	</general>
+	<tiles>
+
+	</tiles>
+</map>

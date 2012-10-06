@@ -1,0 +1,72 @@
+# Project: CS2D
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = CS2D_private.res
+OBJ  = main.o game.o math.o engine_func.o map.o tile.o player.o camera.o SDL_collide.o grid.o tinyxmlparser.o tinystr.o tinyxml.o tinyxmlerror.o $(RES)
+LINKOBJ  = main.o game.o math.o engine_func.o map.o tile.o player.o camera.o SDL_collide.o grid.o tinyxmlparser.o tinystr.o tinyxml.o tinyxmlerror.o $(RES)
+LIBS =  -L"c:/dev/ide/Dev-Cpp/lib" -mwindows -lmingw32 -lSDLmain -lSDL -lSDL_gfx -lSDL_image  
+INCS =  -I"c:/dev/ide/Dev-Cpp/include" 
+CXXINCS =  -I"c:/dev/ide/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"c:/dev/ide/Dev-Cpp/include/c++/3.4.2/backward"  -I"c:/dev/ide/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"c:/dev/ide/Dev-Cpp/include/c++/3.4.2"  -I"c:/dev/ide/Dev-Cpp/include" 
+BIN  = CS2D.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS) -Dmain=SDL_main  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before CS2D.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "CS2D.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+game.o: game.cpp
+	$(CPP) -c game.cpp -o game.o $(CXXFLAGS)
+
+math.o: math.cpp
+	$(CPP) -c math.cpp -o math.o $(CXXFLAGS)
+
+engine_func.o: engine_func.cpp
+	$(CPP) -c engine_func.cpp -o engine_func.o $(CXXFLAGS)
+
+map.o: map.cpp
+	$(CPP) -c map.cpp -o map.o $(CXXFLAGS)
+
+tile.o: tile.cpp
+	$(CPP) -c tile.cpp -o tile.o $(CXXFLAGS)
+
+player.o: player.cpp
+	$(CPP) -c player.cpp -o player.o $(CXXFLAGS)
+
+camera.o: camera.cpp
+	$(CPP) -c camera.cpp -o camera.o $(CXXFLAGS)
+
+SDL_collide.o: SDL_collide.cpp
+	$(CPP) -c SDL_collide.cpp -o SDL_collide.o $(CXXFLAGS)
+
+grid.o: grid.cpp
+	$(CPP) -c grid.cpp -o grid.o $(CXXFLAGS)
+
+tinyxmlparser.o: tinyxmlparser.cpp
+	$(CPP) -c tinyxmlparser.cpp -o tinyxmlparser.o $(CXXFLAGS)
+
+tinystr.o: tinystr.cpp
+	$(CPP) -c tinystr.cpp -o tinystr.o $(CXXFLAGS)
+
+tinyxml.o: tinyxml.cpp
+	$(CPP) -c tinyxml.cpp -o tinyxml.o $(CXXFLAGS)
+
+tinyxmlerror.o: tinyxmlerror.cpp
+	$(CPP) -c tinyxmlerror.cpp -o tinyxmlerror.o $(CXXFLAGS)
+
+CS2D_private.res: CS2D_private.rc 
+	$(WINDRES) -i CS2D_private.rc --input-format=rc -o CS2D_private.res -O coff 

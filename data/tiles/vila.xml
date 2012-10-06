@@ -1,0 +1,21 @@
+<!--
+	Tile data
+	
+	This file assigns properties to the given tile file. Ie, if this file is named vila.xml, then
+	vila.bmp is associated.
+	
+	The X and Y properties for a tile, are grid style. Meaning, X = 1 , is starting at pixel position 32 to 64.
+	
+-->
+<tiles>	
+	<tile>
+		<x>0</x>
+		<y>0</y>
+		<!-- default is true -->
+		<passable>true</passable>
+		<!-- default is 0.5 : ie for snow, or sand, ice. -->
+		<slowdown>0.5</slowdown>
+		<!-- amount of health gaining or taken when hitting this tile  default is 0.0 -->
+		<health></health>
+	</tile>
+<tiles>

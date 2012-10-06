@@ -1,0 +1,88 @@
+Counter-Strike 2D Logbook
+-------------------------
+
+--------------
+Initialization
+--------------
+Creating entity types.
+
+-------
+Allegro
+-------
+Allegro 4.0.3 (RC2), MSVC
+yield_timeslice()
+install_timer()
+alfont_init()
+install_keyboard()
+install_mouse()
+setting up timer functions / locking functions & memory
+Timers installed
+Window title set: [Counter-Strike 2D]
+Loading font data
+Display 'switch to background' mode set
+Initializing sound
+Bitmap created: bmp_screen
+Bitmap created: bmp_collide
+Datafile loaded: graphics.dat
+Datafile loaded: shadows.dat
+Datafile loaded: hud.dat
+Color conversion method set
+Mouse speed set
+
+----
+GAME 
+----
+----------------
+LOADING TEXTURES
+----------------
+Initializing textures database.
+Going to create temp-variables.
+Bitmap created.
+Datafile loaded - beginning examination
+BEGIN PROCESSING: Texture 0 , size 64x64.
+PROPERTY: REAC-WATER
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 1 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 2 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 3 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 4 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 5 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 6 , size 256x256.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 7 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 8 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 9 , size 64x64.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 10 , size 64x64.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 11 , size 64x64.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 12 , size 96x32.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 13 , size 32x96.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 14 , size 64x64.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 15 , size 64x64.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 16 , size 128x128.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 17 , size 64x64.
+DONE PROCESSING: Texture
+BEGIN PROCESSING: Texture 18 , size 64x64.
+DONE PROCESSING: Texture
+
+--------------
+BATTLE CONTROL
+--------------
+
+3...2...1... GO!
+
+Exeptional high RUNNING_TIMER_TENTH, fixed at max 40

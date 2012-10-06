@@ -1,0 +1,41 @@
+Counter-Strike FLAT
+===================
+
+TODO:
+-----
+
+- load from xml
+- make use of timers
+- Map editor
+- Entities
+- Particles
+- Enemies
+- Weapons
+- Game modes
+- Water effect
+- Heat effect
+
+
+
+
+How it works:
+=============
+On map load; the tilemap element will be read and the corresponding BMP + 
+grid data will be loaded. Ie:
+
+<tilemap>vila</tilemap>
+
+will load
+
+vila.bmp
+
+for the graphical stuff
+
+and
+
+vila.xml
+
+for grid data.
+
+
+

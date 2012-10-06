@@ -1,0 +1,19 @@
+
+  map.draw(viewX*32, viewY*32, viewZ);
+    
+//    pixelColor(screen, mouse_x, mouse_y, black);
+      aalineRGBA(screen, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 0, 255);
+      aalineRGBA(screen, SCREEN_WIDTH, 0, 0, SCREEN_HEIGHT, 0, 0, 0, 255);
+
+      lineRGBA(screen, SCREEN_WIDTH/2, SCREEN_HEIGHT/2, mouse_x, mouse_y, 255, 0, 0, 255);
+
+
+  float angle = getMouseRadians();
+
+  for (int deg = -50; deg <= 50; deg+=5) {
+      float newAngle = getIncreasedRad(angle, deg);
+      int nx = (mouse_x + (cos(newAngle)*(500)));
+      int ny = (mouse_y + (sin(newAngle)*(500)));
+    
+      lineRGBA(screen, SCREEN_WIDTH/2, SCREEN_HEIGHT/2, nx, ny, 255, 255, 0, 255);    
+  }
